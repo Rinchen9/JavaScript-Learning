@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title> Learning JavaScript </title>
+    </head>
+    <body>
+        <h1 onmouseover="this.style.color='red'" onMouseout="this.style.color='black'"> Learning JavaScript </h1>
+
+        <a href="#" onClick="alert('Hi');"> Click </a> <br>
+
+        <input type="button" value="Click" onClick="alert('You clicked');"> <br>
+
+		<form onSubmit="checkAddress('email');" >
+			Email:
+			<input type="text" id="email" onFocus="this.style.backgroundColor = 'lime';" onblur="this.style.backgroundColor='white'">
+			<input type="submit" value="Submit">
+		</form>
+
+		<form> 
+			ZIP:<br> 
+			<input type="text" id="zip" onBlur="fillCity();"><br> 
+			City:<br> 
+			<input type="text" id="city"> 
+		</form>
+
+			<p id="slowLoris"> Slow lorises are a group of several species of strepsirrhine primates which make up the genus Nycticebus. 
+				<a href="javascript:void(0);" onClick="expandLoris();"><em>Click for more.</em></a> 
+			</p>
+
+
+        <script src="jsLearning.js"></script>
+    </body>
+</html>
